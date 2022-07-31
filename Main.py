@@ -40,3 +40,13 @@ for line in range(queries):
     elif values[0] == 2:
         stack.pop()
 stack.status()
+# Do not change the following code
+size, queries = map(int, input().rstrip().split())
+stack = Stack(size)
+for line in range(queries):
+    values = list(map(int, input().rstrip().split()))
+    if values[0] == 1:
+        stack.push(values[1])
+    elif values[0] == 2:
+        stack.pop()
+stack.status()
